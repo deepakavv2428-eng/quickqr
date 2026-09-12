@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickQR - Free QR Code Generator</title>
+    <meta name="description" content="Generate free QR codes for URLs, text, WhatsApp, phone numbers and email.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Quick<span>QR</span></div>
+        <p>Simple. Fast. Free.</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Free QR Code Generator</h1>
+            <p>Create a QR code in seconds.</p>
+        </section>
+
+        <section class="generator">
+
+            <div class="controls">
+
+                <label for="qrType">QR Code Type</label>
+
+                <select id="qrType">
+                    <option value="text">Text / URL</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="wifi">Wi-Fi</option>
+                </select>
+
+                <div id="inputArea"></div>
+
+                <div class="customization">
+
+                    <div>
+                        <label for="qrColor">QR Color</label>
+                        <input type="color" id="qrColor" value="#000000">
+                    </div>
+
+                    <div>
+                        <label for="bgColor">Background</label>
+                        <input type="color" id="bgColor" value="#ffffff">
+                    </div>
+
+                </div>
+
+                <button id="generateBtn">Generate QR Code</button>
+
+            </div>
+
+            <div class="result">
+
+                <h2>Your QR Code</h2>
+
+                <div id="qrcode"></div>
+
+                <p id="placeholder">
+                    Your QR code will appear here.
+                </p>
+
+                <button id="downloadBtn" class="download">
+                    Download PNG
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 QuickQR. Free QR Code Generator.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
